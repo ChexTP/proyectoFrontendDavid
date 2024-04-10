@@ -1,0 +1,27 @@
+###
+POST http://127.0.0.1:5000/persona HTTP/1.1
+Content-Type: application/json
+
+{
+    "cedula":"2645654",
+    "nombre":"MARIA",
+    "apellidos":"colores",
+    "correo":"correo@correo.com"
+}
+
+###
+GET http://127.0.0.1:5000/persona HTTP/1.1
+
+###
+GET http://127.0.0.1:5000/persona/65e8789202f6387c9f96e86c HTTP/1.1
+
+###
+PUT http://127.0.0.1:5000/persona/65e8789202f6387c9f96e86c HTTP/1.1
+Content-Type: application/json
+
+{   
+    "correo":"aslkdalsdhakl"   
+}
+
+###
+DELETE http://127.0.0.1:5000/persona/65e0b0896c2a2740255a7a29 HTTP/1.1
